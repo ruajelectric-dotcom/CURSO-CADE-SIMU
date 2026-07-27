@@ -1,3 +1,5 @@
+![CADe SIMU desde Cero - RUAJ ELECTRIC](portada.jpg)
+
 # CURSO CADe SIMU - RUAJ ELECTRIC
 
 Material de apoyo 100% gratuito para aprender simulacion de circuitos electricos desde cero.
