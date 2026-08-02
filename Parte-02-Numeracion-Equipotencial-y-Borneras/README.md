@@ -16,8 +16,11 @@ Playlist completa del curso: https://www.youtube.com/playlist?list=PL12Fo7Tlkoig
 ## Que encontraras aqui
 
 Un archivo para que practiques:
+<p align="center">
+  <img src="img-7.png" width="70%">
+</p>
 
-| Archivo | Para que sirve |
+| DESCARGA EL ARCHIVO | ¿PARA QUE SIRVE? |
 | --- | --- |
 | [`arranque-paro-motor-3f.cad`](arranque-paro-motor-3f.cad) | Circuito de ejemplo para activar y desactivar la numeracion de cable |
 
@@ -26,10 +29,19 @@ Un archivo para que practiques:
 CADe SIMU numera los cables por ti, pero viene desactivado. Se activa asi:
 
 **Paso 1.** Menu **Archivo**
+<p align="center">
+  <img src="img-8.png" width="100%">
+</p>
 
 **Paso 2.** Entra a **Configuracion**
+<p align="center">
+  <img src="img-9.png" width="30%">
+</p>
 
 **Paso 3.** Marca donde dice **Visualizar numero de cable**
+<p align="center">
+  <img src="img-10.png" width="50%">
+</p>
 
 Listo. Ahora el programa te muestra el numero de cada cable sobre el esquema.
 
@@ -39,11 +51,14 @@ Haz lo mismo dos veces con el mismo archivo y compara.
 
 **Primera vuelta - sin numeros**
 
-- Abre `ejercicio-numeracion.cad` con la opcion desactivada
+- Abre `arranque-paro-motor-3f.cad` con la opcion desactivada
 - Dale simular
 - Sigue con el dedo por donde pasa la corriente
 - Anota en un papel cuales puntos crees tu que son el mismo potencial
-
+- 
+<p align="center">
+  <img src="img-6.png" width="50%">
+</p>
 **Segunda vuelta - con numeros**
 
 - Activa **Visualizar numero de cable**
