@@ -19,7 +19,7 @@ Un archivo para que practiques:
 
 | Archivo | Para que sirve |
 | --- | --- |
-| `ejercicio-numeracion.cad` | Circuito de ejemplo para activar y desactivar la numeracion de cable |
+| `arranque-paro-motor-3f.cad` | Circuito de ejemplo para activar y desactivar la numeracion de cable |
 
 ## El truco de esta parte
 
