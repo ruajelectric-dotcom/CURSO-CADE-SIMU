@@ -110,17 +110,66 @@ Referencia rapida en el circuito de potencia:
 | X | Bornes y borneras (XT) |
 | W | Cables y conductores |
 
-## Plantilla de bornera
+## Ejercicio 1 - Etiqueta las borneras
 
-Llena esta tabla con tu propio circuito. La bornera es lo que separa el
-tablero del campo: todo lo que entra o sale del gabinete pasa por ahi.
+Mira bien el circuito: las borneras ya estan puestas, pero todas se llaman
+igual, `-X`. Asi no sirve. En un tablero real cada borne tiene que estar
+identificado, porque de eso depende que otro electricista pueda conectar,
+revisar o reparar sin adivinar.
+
+Tu trabajo es ponerles nombre.
+
+### Como cambiar la etiqueta en CADe SIMU
+
+**Paso 1.** Abre `arranque-paro-motor-3f.cad`
+
+**Paso 2.** Haz doble clic sobre la bornera que quieres editar
+
+**Paso 3.** Se abre la ventana de propiedades del componente
+
+**Paso 4.** Cambia el nombre y acepta
+
+**Paso 5.** Repite con las demas borneras y guarda el archivo
+
+### Que nombres poner
+
+Usa esta convencion. La letra X es la que la norma asigna a bornes y
+borneras, igual que KM es para contactor o FR para rele termico.
+
+| Bornera del circuito | Como debe quedar | Por que |
+| --- | --- | --- |
+| `-X` de L1 L2 L3 PE | `-XT1` | Bornera de potencia, entrada de red |
+| `-X` de L y N (control) | `-XT2` | Bornera del circuito de mando |
+
+Si tu tablero tuviera mas borneras seguirias con -XT3, -XT4 y asi.
+
+### Ahora llena la tabla
+
+Con el circuito ya etiquetado y la numeracion de cable activada, completa
+esto. Los numeros los lees directamente del esquema.
 
 | Borne | Viene de | Va hacia | Numero equipotencial |
 | --- | --- | --- | --- |
-| XT-1 | | | |
-| XT-2 | | | |
-| XT-3 | | | |
-| XT-4 | | | |
+| XT1-1 | Red L1 | ITM borne 1 | |
+| XT1-2 | Red L2 | ITM borne 3 | |
+| XT1-3 | Red L3 | ITM borne 5 | |
+| XT1-PE | Tierra de servicio | Carcasa del motor | |
+| XT2-1 | Fase de mando | Rele termico borne 95 | |
+| XT2-2 | Neutro | Bobina KM1 borne A2 | |
+
+Fijate en algo: la columna del numero equipotencial no la inventas.
+El programa ya te la dio cuando activaste **Visualizar numero de cable**.
+Solo tienes que leerla.
+
+### Por que importa
+
+La bornera es la frontera entre el tablero y el campo. Todo lo que entra
+o sale del gabinete pasa por ahi. Si las borneras estan bien marcadas,
+cualquier electricista abre el tablero, mira el plano y sabe exactamente
+que hay en cada punto sin tener que seguir un cable con la mano.
+
+Si estan sin marcar, o todas se llaman `-X`, el plano no sirve para nada
+en campo.
 
 ## Material de apoyo externo
 
