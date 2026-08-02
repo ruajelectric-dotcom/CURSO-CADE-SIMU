@@ -1,14 +1,14 @@
 # Parte 02 - Numeracion Equipotencial y Borneras
 
 <p align="center">
-  <img src="portada-02.png" width="100%">
+  <img src="PORTADA-3.png" width="100%">
 </p>
 
 Como numerar correctamente un esquema electrico y como usar las borneras en CADe SIMU.
 
 ## Ver el video
 
-Video de esta parte: [PEGA-AQUI-EL-LINK](https://youtu.be/3zHdyqJfxOc?si=6UxhK6TUAOfg9PO_)
+Video de esta parte: https://youtu.be/3zHdyqJfxOc?si=JD3sWBZ48kJwgtXd
 
 Playlist completa del curso: https://www.youtube.com/playlist?list=PL12Fo7Tlkoigvi0rdW3g-1iNB54jVpZp-
 
