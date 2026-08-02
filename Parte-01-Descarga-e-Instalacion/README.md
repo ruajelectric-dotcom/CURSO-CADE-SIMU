@@ -22,6 +22,9 @@ Playlist completa del curso: https://www.youtube.com/playlist?list=PL12Fo7Tlkoig
 Ademas del video, hay una pagina web muy completa sobre CADe SIMU: **canalplc**. Es una de las mejores fuentes gratuitas que existen en español.
 
 Pagina principal: https://canalplc.blogspot.com/p/cadesimu.html
+<p align="center">
+  <img src="img-5.png" width="700">
+</p>
 
 ### Que vas a encontrar ahi
 
@@ -30,6 +33,9 @@ Pagina principal: https://canalplc.blogspot.com/p/cadesimu.html
 **Todas las librerias de simbolos.** Imagenes de cada libreria del programa: alimentaciones, fusibles, seccionadores, automaticos, contactores, motores, potencia, contactos, accionamientos, detectores, bobinas, señalizaciones, reles electronicos, logica, ladder, grafcet, entradas y salidas, electroneumatica y simbolos 2D / 3D.
 
 **Manuales en PDF** de las versiones 1, 3 y 4 del programa.
+<p align="center">
+  <img src="img-1.png" width="700">
+</p>
 
 ### Ejemplos de circuitos reales
 
@@ -38,6 +44,9 @@ Circuitos ya armados, cada uno con su video de simulacion:
 https://canalplc.blogspot.com/p/ejemplos.html
 
 Entre ellos hay **puente grua**, ascensor, semaforo, persiana automatica, cuadro estrella-triangulo, electroneumatica, mecatronica, compactadora de chatarra, secuenciales y un cuadro electrico de vivienda con domotica.
+<p align="center">
+  <img src="img-2.png" width="700">
+</p>
 
 ### CADe SIMU con Arduino
 
@@ -48,6 +57,9 @@ Esto es de lo mas interesante que tiene la pagina. CADe SIMU 4 se puede comunica
 - Control de motores paso a paso: https://www.profetolocka.com.ar/2021/04/15/cade_simu-4-control-de-motores-paso-a-paso/
 
 Ese ultimo te va a servir mucho cuando llegues a la **Parte 14** y la **Parte 15** del curso, que son de motor paso a paso.
+<p align="center">
+  <img src="img-3.png" width="700">
+</p>
 
 ### Otras secciones del mismo blog
 
