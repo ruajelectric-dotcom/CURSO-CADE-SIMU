@@ -1,7 +1,7 @@
 # Parte 03 - Alimentaciones
 
 <p align="center">
-  <img src="portada-03.png" width="100%">
+  <img src="portada-4.png" width="100%">
 </p>
 
 De donde viene la tension de tu circuito, y como se representa en CADe SIMU.
@@ -56,11 +56,63 @@ Escoges la alimentacion monofasica. Te aparecen tres bornes:
 | Neutro | Blanco |
 | Tierra de proteccion | Verde o desnudo |
 
-### Practica
+### 🔧 Practica 1 - Tu primer circuito monofasico
 
-Arma esto: alimentacion monofasica → fusible → pulsador → lampara → neutro.
-Es el circuito mas simple que existe y ya tiene todo lo esencial.
+<p align="center">
+  <img src="img-11.png" width="60%">
+</p>
 
+Este es el circuito mas simple que existe, y ya tiene TODO lo esencial:
+alimentacion, proteccion, mando y carga. Si entiendes este, entiendes
+el 80% de la logica cableada. 💪
+
+**Que lleva:**
+
+| Componente | Etiqueta | Que hace |
+| --- | --- | --- |
+| Bornera de entrada | -X1 | Por aqui entra la fase L al tablero |
+| Fusible | -FUS | Protege el circuito |
+| Pulsador | -PUL | Da la orden |
+| Lampara | -LAP | La carga, lo que se ve funcionar |
+| Bornera de salida | -X2 | Por aqui sale el neutro N |
+
+**Armalo asi:**
+
+**Paso 1.** Pon la alimentacion monofasica y saca la fase L a la bornera -X1
+
+**Paso 2.** De -X1 baja al fusible -FUS (bornes 1 y 2)
+
+**Paso 3.** Del fusible al pulsador -PUL (bornes 13 y 14)
+
+**Paso 4.** Del pulsador a la lampara -LAP (bornes X1 y X2)
+
+**Paso 5.** De la lampara devuelvete a la bornera -X2, que es tu neutro
+
+**Paso 6.** Dale simular y oprime el pulsador ⚡
+
+Si la lampara enciende, lo lograste. 🎉
+
+**Fijate en esto antes de seguir:**
+
+Mira el recorrido de la corriente. Entra por L, pasa por el fusible, pasa
+por el pulsador, llega a la lampara, y se devuelve por N. Ese camino cerrado
+es TODO. Si en cualquier punto se abre, no pasa nada.
+
+Activa **Visualizar numero de cable** (Archivo → Configuracion, como vimos
+en la Parte 02) y mira como el numero cambia cada vez que la corriente
+atraviesa un componente. 👀
+
+**Ahora rompelo a proposito:** 🔨
+
+Desconecta el cable que va de la lampara a la bornera -X2 y simula otra vez.
+El pulsador funciona, el fusible esta bueno, todo se ve bien... pero la
+lampara no enciende.
+
+Ese es el error mas comun del principiante: dejar el circuito abierto. Y es
+tambien el error mas comun en campo. Un neutro flojo en la bornera y el
+equipo simplemente no arranca, sin que nada se vea dañado.
+
+Vuelvelo a conectar y sigue. ✅
 ---
 
 ## 2. Dos fases (lo que en campo llamamos "bifasico")
