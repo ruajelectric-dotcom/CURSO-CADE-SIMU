@@ -59,7 +59,7 @@ Escoges la alimentacion monofasica. Te aparecen tres bornes:
 ### 🔧 Practica 1 - Tu primer circuito monofasico
 
 <p align="center">
-  <img src="img-11.png" width="60%">
+  <img src="img-11.png" width="50%">
 </p>
 
 Este es el circuito mas simple que existe, y ya tiene TODO lo esencial:
@@ -152,10 +152,120 @@ La opcion B es la que representa de verdad un sistema 120/240.
 | Neutro | Blanco |
 | Tierra de proteccion | Verde o desnudo |
 
-### Practica
+### 🔧 Practica 2 - La ducha electrica: 120 y 220 en el mismo tablero
 
-Arma una ducha electrica: dos lineas, un ITM bipolar, y la resistencia
-entre las dos fases.
+Aqui esta la clave del famoso "bifasico". En un tablero de vivienda tienes
+DOS tensiones disponibles al mismo tiempo. Escoges cual usar segun donde
+conectes la carga. 🤔
+
+Para que esto funcione, a la casa llegan TRES hilos: dos fases (F1 y F2)
+y el neutro (N).
+
+#### Version A - Cargas de 120 V (fase y neutro)
+
+<p align="center">
+  <img src="img-12.png" width="55%">
+</p>
+
+**Paso 1.** Saca dos fases L y un neutro N a las borneras
+
+**Paso 2.** Las dos fases entran al ITM bipolar (bornes 1-2 y 3-4)
+
+**Paso 3.** De cada polo del ITM baja a una resistencia (borne 1)
+
+**Paso 4.** Los bornes 2 de las dos resistencias se unen y van al neutro N
+
+**Paso 5.** Simula ⚡
+
+**Que armaste:** dos circuitos de 120 V que comparten el mismo neutro. Cada
+resistencia trabaja entre SU fase y el neutro. Asi funciona un tablero de
+casa: unos circuitos en una fase, otros en la otra, todos devolviendose por
+el mismo neutro. 💡
+
+#### Version B - La ducha, 220 V (fase y fase)
+
+<p align="center">
+  <img src="img-13.png" width="45%">
+</p>
+
+**Paso 1.** Las dos fases entran al ITM bipolar
+
+**Paso 2.** Del borne 2 sale un cable que cruza por abajo
+
+**Paso 3.** Ese cable sube al borne 1 de la resistencia -R
+
+**Paso 4.** El borne 2 de la resistencia va al borne 4 del ITM
+
+**Paso 5.** Simula ⚡
+
+**Que armaste:** la ducha, conectada entre las dos fases. Ve 220 V. Y fijate
+que aqui **no aparece el neutro**. 🚿
+
+#### Y aqui viene la pregunta que confunde a todos 🤔
+
+"Si la ducha no usa neutro... entonces el neutro no existe en un tablero
+bifasico?"
+
+**No.** El neutro SI esta en el tablero, siempre. La ducha simplemente no
+lo usa, pero las luces y los tomas de la casa SI. Los tres hilos llegan:
+F1, F2 y N.
+
+Lo que cambia de una carga a otra no es que "haya o no haya neutro". Es POR
+DONDE se cierra la corriente. Y esto es lo importante:
+
+**La corriente SIEMPRE retorna. Sin camino de vuelta no circula nada.**
+(Acuerdate de la Practica 1: al desconectar el neutro, la lampara se apago.)
+
+Lo que cambia es el camino de retorno:
+
+| Carga | Va por | Vuelve por |
+| --- | --- | --- |
+| Bombillo 120 V | F1 | El neutro |
+| Ducha 220 V | F1 | La otra fase, F2 |
+
+La ducha no necesita neutro porque **F2 es su camino de retorno.** La
+corriente entra por una fase y se devuelve por la otra. El circuito se
+cierra igual, solo que sin pasar por el neutro.
+
+#### Ojo con esto, que es el error mas comun ⚠️
+
+Uno pensaria que la ducha no usa neutro "porque es una carga que solo
+consume". Eso NO es correcto.
+
+Mira: el bombillo y la ducha son los DOS cargas resistivas. Misma naturaleza.
+Y sin embargo uno usa neutro y el otro no. Entonces el tipo de carga no es
+lo que decide.
+
+**Lo que decide es la CONEXION, no el tipo de carga:**
+
+- Conectada fase-neutro → retorna por el neutro → ve 120 V
+- Conectada fase-fase → retorna por la otra fase → ve 220 V
+
+#### La leccion final 🎯
+
+| Como conectas la carga | Que ve | Ejemplo |
+| --- | --- | --- |
+| Fase → Neutro | 120 V | Bombillo, toma, TV |
+| Fase → Fase | 220 V | Ducha, aire, horno |
+
+Mismo tablero. Mismos tres hilos. Distinta conexion, distinta tension.
+
+Por eso, al leer un plano, no preguntes "hay neutro?". El neutro esta.
+Pregunta: **esta carga se conecta fase-neutro o fase-fase?** 👀
+
+Y cuando alguien te diga "conectame eso a bifasico", pregunta de que
+sistema viene: si es de un trifasico en estrella, entre fases hay 208 V,
+no 220. **Se mide, no se asume.** 📏
+
+#### ⚠️ Recuerda: CADe SIMU no calcula tension
+
+El programa no te va a mostrar 120 ni 220 en pantalla, ni te avisa si
+conectas mal. Lo que practicas aqui es el CRITERIO de conexion y el dibujo
+correcto del plano.
+
+El valor lo escribes tu, con la herramienta de texto, al lado de cada carga:
+
+    -R  220 V  4500 W
 
 ---
 
