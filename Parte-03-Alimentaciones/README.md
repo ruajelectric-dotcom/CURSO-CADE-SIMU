@@ -185,7 +185,7 @@ el mismo neutro. 💡
 #### Version B - La ducha, 220 V (fase y fase)
 
 <p align="center">
-  <img src="img-13.png" width="45%">
+  <img src="img-14.png" width="30%">
 </p>
 
 **Paso 1.** Las dos fases entran al ITM bipolar
@@ -200,6 +200,30 @@ el mismo neutro. 💡
 
 **Que armaste:** la ducha, conectada entre las dos fases. Ve 220 V. Y fijate
 que aqui **no aparece el neutro**. 🚿
+## ⚠️ La resistencia no "prende" — asi confirmas que funciona
+
+Si armas la ducha y le das simular esperando que la resistencia se
+encienda... no va a pasar. Y no es que este mal. 
+
+En CADe SIMU la resistencia es un simbolo: no brilla, no calienta, no
+cambia. Igual que el fusible o el transformador.
+
+**La señal de que la corriente esta pasando es el CABLE.** Cuando el
+circuito esta bien conectado y accionas el ITM, los cables cambian de
+color. Ahi sabes que quedo bien. ✅
+
+**Dos cosas que revisar si "no simula":**
+
+1. **El ITM esta abierto.** Durante la simulacion, haz clic sobre el para
+   cerrarlo. Sin eso, no pasa corriente.
+
+2. **Estas esperando que la carga se encienda.** No lo hara. Mira los
+   cables: si cambian de color, tu circuito esta perfecto.
+
+**Truco:** si quieres ver algo encenderse de verdad, cambia la resistencia
+por una lampara (`-HL`) mientras pruebas. La lampara si se ilumina y te
+confirma que la corriente llega. Despues vuelves a poner la resistencia
+para el plano real.
 
 #### Y aqui viene la pregunta que confunde a todos 🤔
 
